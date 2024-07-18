@@ -15,7 +15,18 @@ header {
 .navbar_stilos .nav-link:hover {
   color: lightgray; /* Cambia a cualquier color que prefieras para el efecto hover */
 }
-
+#idImagenDestacada{
+  max-width: 500px; /* Ajusta el ancho máximo del carrusel */
+    margin: auto; /* Centra el carrusel horizontalmente */
+ } 
+ .carousel-item img{
+  max-height: 400px; /* Ajusta la altura máxima de las imágenes */
+    object-fit: cover; /* Asegura que las imágenes se ajusten al contenedor */
+ } 
+ 
+  .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo de los controles */
+  }
 
 .nav-link {
   color: white;
