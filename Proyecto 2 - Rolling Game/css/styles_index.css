@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("https://i.blogs.es/0c35f3/dzjkumdumaax6as/1366_2000.jpg"); /* Ruta a tu imagen de fondo */
+  background-size: cover; /* Cubrir toda la pantalla */
+  background-position: center; /* Centrar la imagen */
+  background-repeat: no-repeat; /* No repetir la imagen */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  text-align: center;
+  padding: 50px;
+  color: hsl(0, 0%, 100%); /* Color de texto blanco para contraste */
+  text-shadow: 2px 2px 4px black;
+  font-size: 22px; /* Tamaño de letra para el título h1 */
+  font-size: 22px; /* Tamaño de letra para el párrafo p */
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  text-align: left;
+  max-width: 400px;
+  width: 100%;
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo h1 {
+  font-size: 1.8rem;
+  color: hsl(214, 89%, 52%);
+  font-weight: 600;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #1877f2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.form-container button:hover {
+  background-color: #0e5a99;
+}
+
+.forgot-password {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.forgot-password a {
+  color: #1877f2;
+  text-decoration: none;
+}
+
+.create-account {
+  background-color: #42b72a;
+  margin-top: 10px;
+}
+
+.create-account:hover {
+  background-color: #36a420;
+}

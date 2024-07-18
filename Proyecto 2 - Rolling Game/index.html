@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iniciar sesión - Rolling Game</title>
+    <link rel="stylesheet" href="./css/styles_index.css" />
+  </head>
+  <body>
+    <div class="content">
+      <h1>Bienvenido a Rolling Game</h1>
+      <p>La Mejor Plataforma de VideoJuegos</p>
+    </div>
+    <div class="container">
+      <div class="logo">
+        <img src="./Imagenes/logodef.png" alt="Rolling Game Logo" />
+        <h1>Rolling Game</h1>
+      </div>
+
+      <form id="loginForm" class="form-container">
+        <label for="nombre">Correo electrónico o Nombre de Usuario</label>
+        <input
+          type="text"
+          class="form-control"
+          id="idInputUsuario"
+          placeholder="Correo electrónico o Nombre de Usuario"
+          required
+          aria-describedby="emailHelp"
+        />
+        <div id="idErrorInputUsuario" class="form-text text-danger"></div>
+
+        <br />
+        <label for="contraseña" class="form-label">Contraseña</label>
+        <input
+          type="password"
+          class="form-control"
+          id="idInputContrasenia"
+          placeholder="Contraseña"
+          required
+        />
+        <div id="idErrorInputContrasenia" class="form-text text-danger"></div>
+
+        <button type="submit" class="btn btn-primary" id="idBotonIniciarSesion">
+          Iniciar sesión
+        </button>
+
+        <div class="forgot-password">
+          <a href="#">¿Olvidaste tu contraseña?</a>
+        </div>
+        <hr />
+        <button
+          type="button"
+          class="create-account"
+          onclick="window.location.href='./paginas/registro.html'"
+        >
+          Registración
+        </button>
+      </form>
+    </div>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.bg-color {
+  background-color: #1b2939;
+}
+.btn-estilo {
+  border-radius: 5px;
+  padding: 15px 0px 15px 0px;
+  background-color: #0074e4;
+  color: white;
+  font-size: medium;
+  font-family: "Inter", sans-serif;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+.btn-2-estilo {
+  border-radius: 5px;
+  border-color: white;
+  padding: 15px 0px 15px 0px;
+  background-color: transparent;
+  color: white;
+  font-size: medium;
+  font-family: Inter, sans-serif;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+.btn-2-estilo:hover {
+  background-color: rgba(255, 255, 255, 0.151);
+}
+.btn-estilo:hover {
+  background-color: #298ae8;
+}
+.bg-compra {
+  background-color: #0d131a;
+  border-radius: 5px;
+}
+.gameImage {
+  width: 100%;
+}
+@media screen and (max-width: 1024px) {
+  .gameImage {
+    display: none;
+  }
+}

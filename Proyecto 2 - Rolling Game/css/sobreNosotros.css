@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  background-color: #1b2939;
+  max-height: max-content;
+  min-height: 76vh;
+}
+
+body {
+  background-color: #1b2939;
+}
+
+.card-image {
+  height: 150px;
+  border-radius: 100px;
+}
+
+.integrante {
+  justify-content: center;
+}
