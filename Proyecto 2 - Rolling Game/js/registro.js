@@ -63,7 +63,7 @@ const registrarUsuario = (evento) => {
         nombreDeUsuario: inputUsuario.value,
         contraseniaDeUsuario: inputContrasenia.value,
         login: false,
-        role: "usuario",
+        role: "admin",
         bloqueado: false,
         carrito: [],
         favoritos: [],
