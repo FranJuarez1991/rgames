@@ -34,6 +34,10 @@ h2 {
   height: 300px; /* Permite que la altura se ajuste automáticamente */
   object-fit: cover;
 }
+.card-transparente {
+  background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco semi-transparente */
+  border: 2px solid #ccc; /* Añadir un borde si es necesario */
+}
 /*
 .card-content {
   padding: 20px;

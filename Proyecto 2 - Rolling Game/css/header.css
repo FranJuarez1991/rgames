@@ -6,6 +6,17 @@ header {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
 }
+
+/* styles.css */
+.navbar_stilos .nav-link {
+  color: white; /* Cambia a cualquier color que prefieras */
+}
+
+.navbar_stilos .nav-link:hover {
+  color: lightgray; /* Cambia a cualquier color que prefieras para el efecto hover */
+}
+
+
 .nav-link {
   color: white;
 }
@@ -31,3 +42,5 @@ header {
     height: 58px;
   }
 }
+
+

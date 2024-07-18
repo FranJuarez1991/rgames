@@ -64,6 +64,10 @@ const productos = [
     destacado: false,
   },
 ];
+// Actualizar los precios para incluir el signo de pesos
+productos.forEach((producto) => {
+  producto.precio = `$${producto.precio}`;
+});
 
 localStorage.setItem("productos", JSON.stringify(productos));
 console.log(imagenDestacada);
@@ -76,7 +80,7 @@ divCards.innerHTML = productos
     (producto) =>
       `
     <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center col-12 my-3 ">
-      <div class="card border-2 ">
+      <div class="card border-2 card-transparente ">
         <img src="${producto.imagen}" class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">${producto.nombre}</h5>

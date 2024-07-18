@@ -22,18 +22,32 @@ const productoExisteFav = usuarioSessionStorage.favoritos.find(
 console.log(productoExisteFav); */
 
 divDetalleProducto.innerHTML = `
-  <div>
-    <div class='w-25 justify-content-end'>
-      <img src="${productoFiltrado.imagen}" alt="" class='w-100'/>
+  <div class="center-container">
+    <div class='w-25 mx-auto'>
+
+      <img src="${productoFiltrado.imagen}" alt="" class='w-100 center-image'/>
     </div>
-    <p>$${productoFiltrado.precio}</p>
-    <p>${productoFiltrado.descripcion}</p>
+    <p style="color: white; font-size: 30px;">${productoFiltrado.precio}</p>
+    <p style="color: white;">${productoFiltrado.descripcion}</p>
   </div>
-  <div>
+  <div class="button-container">
     <button class="btn btn-warning" id='idBotonFavoritos'>Añadir a Favoritos</button>
     <button class="btn btn-success" id='idBotonCarrito'>Añadir al Carrito</button>
   </div>
 `;
+// divDetalleProducto.innerHTML = `
+//   <div>
+//     <div class='w-25 justify-content-end'>
+//       <img src="${productoFiltrado.imagen}" alt="" class='w-100'/>
+//     </div>
+//     <p style="color: white; font-size: 30px">$${productoFiltrado.precio}</p>
+//     <p style="color: white">${productoFiltrado.descripcion}</p>
+//   </div>
+//   <div>
+//     <button class="btn btn-warning" id='idBotonFavoritos'>Añadir a Favoritos</button>
+//     <button class="btn btn-success" id='idBotonCarrito'>Añadir al Carrito</button>
+//   </div>
+// `;
 
 const botonFavoritos = document.querySelector("#idBotonFavoritos");
 const botonCarrito = document.querySelector("#idBotonCarrito");
@@ -48,7 +62,7 @@ const agregarProductoAFavoritos = () => {
   if (!usuarioSesionStorage) {
     alert("Debes iniciar sesion.");
     setTimeout(() => {
-      location.href = "../paginas/iniciar-sesion.html";
+      location.href = "../paginas/index.html";
     }, 1000);
     return;
   }
@@ -136,5 +150,10 @@ const agregarProductoACarrito = () => {
   }
 };
 
-botonFavoritos.addEventListener("click", agregarProductoAFavoritos);
+//botonFavoritos.addEventListener("click", agregarProductoAFavoritos);
+botonFavoritos.addEventListener("click", function () {
+  agregarProductoAFavoritos(); // Llama a la función para agregar el producto a favoritos
+  window.location.href = "../paginas/error.html"; // Redirige a la nueva página
+});
 botonCarrito.addEventListener("click", agregarProductoACarrito);
+
