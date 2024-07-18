@@ -1,0 +1,39 @@
+.body-404 {
+    display: flex;
+    background-color: #000000;
+  }
+  .main404 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+  }
+  .main404 img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .boton {
+    position: relative;
+    top: 100px;
+    background-color: transparent;
+    position: absolute;
+    transition: all 0.5s ease-out;
+  }
+  .boton h1 {
+    font-size: 50px;
+    color: #dfdfdf;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.596);
+    text-decoration: underline;
+  }
+  
+  .boton:hover {
+    margin-left: -20px;
+  }
